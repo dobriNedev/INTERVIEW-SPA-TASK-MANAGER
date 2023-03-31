@@ -1,11 +1,21 @@
+
 import './App.css';
+
+import Dashboard from './components/dashboard/Dashboard';
 import Header from './components/header/Header';
+import { PersonsProvider } from './contexts/pesronsContext';
+
 
 function App() {
+   
+
     return (
-        <div className="App">
-            <Header />
-        </div>
+        <PersonsProvider>
+            <div className="App">
+                <Header />
+                <Dashboard />
+            </div>
+        </PersonsProvider>
     );
 }
 
