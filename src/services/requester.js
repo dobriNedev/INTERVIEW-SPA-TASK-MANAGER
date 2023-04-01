@@ -1,9 +1,16 @@
 //the code bellow depends on the server and the data format 
 
 export const request = async(url) => {
-    const response = await fetch(url);
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Request failed with status ${response.status}`);
+        }
+        const result = await response.json();
 
-    const result = await response.json();
-
-    return result;
-}
+        return result;
+    } catch (error) {
+        console.error(`Error during request: ${error.message}`);
+        throw error;
+    }
+};

@@ -9,10 +9,12 @@ export const PersonsProvider = ({
 }) => {
     const [persons, setPersons] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const [error, setError] = useState(null);
 
     useEffect(()=> {
         getAll()
         .then(data => setPersons(data))
+        .catch(error => setError(error.message));
     }, []);
 
     const handleSearch = (searchTerm) => {
@@ -22,6 +24,7 @@ export const PersonsProvider = ({
     const contextValues = {
         persons,
         searchTerm,
+        error,
         handleSearch
     };
 
