@@ -4,7 +4,7 @@ import { PersonsContext } from '../../contexts/pesronsContext';
 import { v4 as uuidv4 } from 'uuid';
 
 import PersonCard from '../personCard/PersonCard';
-import Error from '../Error/Error';
+import Error from '../error/Error';
 import styles from './Dashboard.module.css';
 
 const Dashboard = () => {
