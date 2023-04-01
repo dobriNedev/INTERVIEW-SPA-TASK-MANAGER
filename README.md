@@ -13,7 +13,7 @@ Simple Support Desk app that should look similar to the following mockup.
 ## Short description
 - Using [assets/api.json](assets/api.json) file to simulate Web API calls.
 - Single Page App (SPA) - React.js.
-- Responsive - working on mobile, tablet and desktop.
+- Responsive design by using responsive CSS units - working on mobile, tablet and desktop.
 - More details come up when you hover person (phone and email).
 - Status icon depending on the person's status. Using [assets/icon-available.svg](assets/icon-available.svg) if the person is available, [assets/icon-busy.svg](assets/icon-busy.svg) otherwise. 
 - Basic search functionality implemented. Using [assets/icon-search.svg](assets/icon-search.svg) for the search bar.
