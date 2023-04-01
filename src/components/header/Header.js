@@ -1,10 +1,8 @@
 import { useContext } from "react";
 import { PersonsContext } from '../../contexts/pesronsContext';
 
-
 import Search from "../search/Search";
 import styles from "./Header.module.css";
-
 
 const Header = () => {
 
