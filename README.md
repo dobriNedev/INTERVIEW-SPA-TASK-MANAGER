@@ -22,7 +22,7 @@ Simple Support Desk app that should look similar to the following mockup.
 - `client` folder contains the whole project.
 - `public` folder contains global asssets for the app(including the json file for simulating Web API calls).
 - `src` folder contains the `App.js`, `index.js` and folders for the components, context(s), and service(s).
-- `components` folder - properly named folder for each component that includes the component itself, the css module for the component and asseet needed for the component(if any).
+- `components` folder - properly named folder for each component that includes the component itself, the css module for the component, testfile and asseet needed for the component(if any).
 - `services` folder - contains unified requester and service (for each resource) for handling AJAX requests. 
 - `contexts` folder.
 
@@ -33,6 +33,7 @@ In the project directory `client`, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -41,5 +42,3 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
