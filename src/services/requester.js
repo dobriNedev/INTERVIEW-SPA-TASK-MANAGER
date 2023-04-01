@@ -1,5 +1,3 @@
-//the code bellow depends on the server and the data format 
-
 export const request = async(url) => {
     try {
         const response = await fetch(url);
